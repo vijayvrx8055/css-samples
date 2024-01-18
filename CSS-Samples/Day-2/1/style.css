@@ -1,0 +1,91 @@
+.card {
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 20px;
+    padding: 16px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+
+}
+
+img {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 24px;
+    border: none;
+}
+
+.banner {
+    border: 1px solid blue;
+    width: 150px;
+    padding: 0px 5px;
+    margin-top: -80px;
+    color: white;
+    background-color: blue;
+    position: fixed;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Trip Sans VF', "Trip Sans", Arial, sans-serif;
+}
+
+.time {
+    border: none;
+    background-color: white;
+    color: black;
+    position: fixed;
+    margin-right: 0;
+    margin-top: -80px;
+    width: 8%;
+    box-sizing: border-box;
+    right: 250px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-family: 'Trip Sans VF', "Trip Sans", Arial, sans-serif;
+}
+
+.title {
+    font-family: 'Segoe UI Historic';
+}
+
+h2 {
+    color: gray;
+}
+
+.security-label {
+    border: 1px solid green;
+    width: 20%;
+    background-color: green;
+    font-family: 'Segoe UI Historic';
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.sec1 {
+    background-color: orange;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.sec2 {
+    font-size: 12px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 3px;
+    color: white;
+}
+
+.security-desc {
+    color: gray;
+    font-family: 'Segoe UI Historic';
+    font-size: 20px;
+    margin-top: -70px;
+    margin-left: 25%;
+}
