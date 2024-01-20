@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="learn"><b><a href="#">Learn about Guest Favourites, the most loved homes on Airbnb</a>
+        </b>
+    </div>
+    <!-- NAVBAR Starts -->
+    <!-- -------------------------------------------------------------------------------------- -->
+    <div class="navbar">
+        <div class="logo">
+            <img class="logo-img" src="./assets/logo.svg">
+        </div>
+        <div class="tabs">
+            <div class="center-tabs">
+                <div class="stays">Stays</div>
+                <div class="exp">Experiences</div>
+                <div class="online-exp">Online Experiences</div>
+            </div>
+        </div>
+        <div class="home">
+            <div class="your-home">Airbnb your home</div>
+            <div class="language">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                </svg>
+            </div>
+            <div class="signup">
+                <div class="ham">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+                <div class="profile">
+                    <img class="profile-img" src="./assets/profile.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <!-- NAVBAR ENDS -->
+    <!-- ------------------------------------------------------------------------- -->
+    <!-- Searchbar STARTS -->
+    <div class="search-flex">
+        <div class="space"></div>
+        <div class="search-bar">
+            <div class="where-section">
+                <div class="search-title">Where</div>
+                <!-- <input class="search-desc" type="text" placeholder="Search Destination"> -->
+                <div class="search-desc">Search Destination</div>
+            </div>
+            <div class="checkin-details">
+                <div class="seperator"></div>
+                <div class="checkin-section">
+                    <div class="search-title">Check in</div>
+                    <div class="search-desc">Add dates</div>
+                </div>
+                <div class="seperator"></div>
+                <div class="checkout-section">
+                    <div class="search-title">Check out</div>
+                    <div class="search-desc">Add dates</div>
+                </div>
+                <div class="seperator"></div>
+                <div class="who-section">
+                    <div class="search-title">Who</div>
+                    <div class="search-desc">Add guests</div>
+                </div>
+            </div>
+            <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </div>
+        </div>
+        <div class="space"></div>
+    </div>
+    <!-- Searchbar ENDS -->
+    <!-- ------------------------------------------------------------------------------ -->
+    <div class="hor-seperator"></div>
+    <!-- Filter Icons STARTS -->
+    <!-- ------------------------------------------------------------------------------- -->
+    <div class="filter-bar">
+        <div class="filter-icons">
+
+            <div class="rooms">
+                <img class="icon-img-g" src="./assets/rooms.jpeg" alt="">
+                <div class="icon-title-g">Rooms</div>
+            </div>
+            <div class="views">
+                <img class="icon-img" src="./assets/views.jpeg" alt="">
+                <div class="icon-title">Amazing views</div>
+                <div class="underline"></div>
+            </div>
+            <div class="golfing">
+                <img class="icon-img-g" src="./assets/golf.jpg" alt="">
+                <div class="icon-title-g">Golfing</div>
+
+            </div>
+            <div class="parks">
+                <img class="icon-img-g" src="./assets/parks.jpg" alt="">
+                <div class="icon-title-g">National Parks</div>
+
+            </div>
+            <div class="tiny-homes">
+                <img class="icon-img-g" src="./assets/tinyHome.jpeg" alt="">
+                <div class="icon-title-g">Tiny homes</div>
+
+            </div>
+            <div class="homes">
+                <img class="icon-img-g" src="./assets/historical-homes.jpg" alt="">
+                <div class="icon-title-g">Historical homes</div>
+                <!-- <div class="underline"></div> -->
+            </div>
+            <div class="farms">
+                <img class="icon-img-g" src="./assets/farms.jpeg" alt="">
+                <div class="icon-title-g">Farms</div>
+
+            </div>
+            <div class="top">
+                <img class="icon-img-g" src="./assets/top.jpg" alt="">
+                <div class="icon-title-g">Top of the world</div>
+
+            </div>
+            <div class="beach">
+                <img class="icon-img-g" src="./assets/beach.jpg" alt="">
+                <div class="icon-title-g">Beachfront</div>
+
+            </div>
+            <div class="right-arrow">
+                <img class="arrow-img" src="./assets/rightArrow.svg" alt="">
+            </div>
+        </div>
+        <div class="filter-buttons">
+            <div class="filters">
+                <img class="filter-icon" src="./assets/tuner.svg" alt="">
+                <div class="filter-desc">Filters</div>
+            </div>
+            <div class="tax">
+                <div class="filter-desc">Display total before taxes</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-toggle-off" viewBox="0 0 16 16">
+                    <path
+                        d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- filter Icons ENDS -->
+    <!-- -------------------------------------------------------------------- -->
+    <!-- Place Cards START -->
+    <div class="place-cards">
+        <div class="card">
+            <img class="card-img" src="./assets/Velhe.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Velhe, Torna-Rajgad, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.88</div>
+            </div>
+
+            <div class="card-desc">Mountain and pool views</div>
+            <div class="date">21-26 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>11,123</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/lonavla.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Lonavla, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">5.0</div>
+            </div>
+
+            <div class="card-desc">Mountain views</div>
+            <div class="date">28 Jan-2 Feb</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>34.234</b> &nbsp night
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/kalamb.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Kalamb, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.88</div>
+            </div>
+
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">16-21 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>14,768</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/Mulshi.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Mulshi, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">New</div>
+            </div>
+
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">16-21 Mar</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>14,768</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/Kambegi.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Kambegi, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.93</div>
+            </div>
+
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">5-10 Feb</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>7,189</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/Khanavale.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Khanavale, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.92</div>
+            </div>
+
+            <div class="card-desc">Mountain views</div>
+            <div class="date">21-26 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>10,992</b> &nbsp night
+            </div>
+
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assets/Velhe.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Velhe, Torna-Rajgad, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.88</div>
+            </div>
+
+            <div class="card-desc">Mountain and pool views</div>
+            <div class="date">21-26 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>11,123</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/lonavla.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Lonavla, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">5.0</div>
+            </div>
+
+            <div class="card-desc">Mountain views</div>
+            <div class="date">28 Jan-2 Feb</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>34.234</b> &nbsp night
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/kalamb.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Kalamb, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.88</div>
+            </div>
+
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">16-21 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>14,768</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/Mulshi.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Mulshi, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">New</div>
+            </div>
+
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">16-21 Mar</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>14,768</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/Kambegi.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Kambegi, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.93</div>
+            </div>
+
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">5-10 Feb</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>7,189</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/Khanavale.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Khanavale, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.92</div>
+            </div>
+
+            <div class="card-desc">Mountain views</div>
+            <div class="date">21-26 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>10,992</b> &nbsp night
+            </div>
+
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assets/Velhe.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Velhe, Torna-Rajgad, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.88</div>
+            </div>
+
+            <div class="card-desc">Mountain and pool views</div>
+            <div class="date">21-26 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>11,123</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/lonavla.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Lonavla, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">5.0</div>
+            </div>
+
+            <div class="card-desc">Mountain views</div>
+            <div class="date">28 Jan-2 Feb</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>34.234</b> &nbsp night
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/kalamb.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Kalamb, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.88</div>
+            </div>
+
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">16-21 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>14,768</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/Mulshi.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Mulshi, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">New</div>
+            </div>
+
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">16-21 Mar</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>14,768</b> &nbsp night
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/Kambegi.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Kambegi, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.93</div>
+            </div>
+            <div class="card-desc">Mountain and lake views</div>
+            <div class="date">5-10 Feb</div>
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>7,189</b> &nbsp night
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assets/Khanavale.webp" alt="">
+            <div class="fav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+            </div>
+            <div class="right-arrow">
+                <!-- <img class="card-arrow" src="./assets/rightArrow.svg" alt=""> -->
+                <svg class="card-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                            fill="#0F0F0F"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="title-flex">
+                <div class="card-title"><b>Khanavale, India</b></div>
+                <div class="rating"><img class="rating-img" src="./assets/star.svg">4.92</div>
+            </div>
+
+            <div class="card-desc">Mountain views</div>
+            <div class="date">21-26 Jan</div>
+
+            <div class="price">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path
+                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                </svg><b>10,992</b> &nbsp night
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- Place Cards END -->
+    <!-- ----------------------------------------------------------------------------- -->
+    <div class="end center">
+        <p class="cont"> Continue exploring amazing views</p>
+        <button class="btn">Show More</button>
+    </div>
+    <!-- Footer STARTS -->
+    <div class="footer-section">
+        <div class="footer-flex">
+            <div class="footer-title">
+                <p>Inspiration for future gateways</p>
+            </div>
+            <div class="footer-tabs">
+                <div class="tab-name">Popular
+                    <div class="underline"></div>
+                </div>
+                <div class="tab-name-g">Arts & Culture</div>
+                <div class="tab-name-g">Outdoors</div>
+                <div class="tab-name-g">Mountains</div>
+                <div class="tab-name-g">Beach</div>
+                <div class="tab-name-g">Unique stays</div>
+                <div class="tab-name-g">Categories</div>
+                <div class="tab-name-g">Things to do</div>
+            </div>
+            <div class="hor-seperator"></div>
+            <div class="footer-tabs-flex">
+                <div class="footer-width">
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat rentals</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat rentals</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat rentals</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat rentals</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat rentals</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat rentals</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat rentals</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Canmore</div>
+                        <div class="footer-tab-desc">Flat</div>
+                    </div>
+                    <div class="footer-tab-card">
+                        <div class="footer-tab-title">Show more <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
+                                style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                <path fill="none" d="M28 12 16.7 23.3a1 1 0 0 1-1.4 0L4 12"></path>
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-flex">
+                <div class="support">
+                    <div class="support-title">Support</div>
+                    <div class="support-link">Help Center</div>
+                    <div class="support-link">AirCover</div>
+                    <div class="support-link">Anti-discrimination</div>
+                    <div class="support-link">Disability support</div>
+                    <div class="support-link">Cancellation options</div>
+                    <div class="support-link">Report neighborhood concern</div>
+                </div>
+                <div class="hosting">
+                    <div class="support-title">Hosting</div>
+                    <div class="support-link">Airbnb your home</div>
+                    <div class="support-link">AirCover for Hosts</div>
+                    <div class="support-link">Hosting resources</div>
+                    <div class="support-link">Community forum</div>
+                    <div class="support-link">Hosting responsibly</div>
+                </div>
+                <div class="airbnb">
+                    <div class="support-title">Airbnb</div>
+                    <div class="support-link">Newsroom</div>
+                    <div class="support-link">New features</div>
+                    <div class="support-link">Careers</div>
+                    <div class="support-link">Investors</div>
+                    <div class="support-link">Airbnb.org emergency stays</div>
+                </div>
+
+
+                <div class="hor-seperator"></div>
+                <div class="company-details">
+                    <div class="comp-details">
+                        <div class="comp-title">2024 Airbnb, Inc.</div>
+                        <div class="comp-title">Privacy</div>
+                        <div class="comp-title">Terms</div>
+                        <div class="comp-title">Sitemap</div>
+                        <div class="ccomp-title">Company</div>
+                    </div>
+                    <div class="socials">
+                        <div class="social-title"></div>
+                        <div class="social-title"></div>
+                        <div class="social-title"></div>
+                        <div class="social-title"></div>
+                        <div class="social-title"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
